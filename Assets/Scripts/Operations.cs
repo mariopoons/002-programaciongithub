@@ -12,7 +12,7 @@ public class Operations : MonoBehaviour
     public float c = 2.0f;
     public float d = 0.5f;
 
-     // OPERACIONES CONDICIONALES
+    // OPERACIONES CONDICIONALES
     public string name1 = "barbadox";
     public string name2 = "scalibab";
     private bool areEqual;
@@ -22,6 +22,24 @@ public class Operations : MonoBehaviour
     // OPERADOR DE DECISIÓN
     public bool isRaining;
     public float number;
+
+    public float num1;
+    public float num2;
+
+    private void Update()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            Calculator(x, y);
+        }
+    }
+    private void Calculator(float num1, float num2)
+    {
+        Debug.Log($"Sum: {num1}+{num2}={num1+num2}");
+        Debug.Log($"Substraction: {num1}-{num2}={num1-num2}");
+        Debug.Log($"Product: {num1}*{num2}={num1*num2}");
+        Debug.Log($"Division: {num1}/{num2}={num1/num2}");
+    }
 
     private void Start()
     {
@@ -54,7 +72,7 @@ public class Operations : MonoBehaviour
         {
             Debug.Log($"El numero {number} es negativo");¨
         }*/
-
-
     }
-}
+}     
+       
+        

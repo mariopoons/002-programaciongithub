@@ -457,6 +457,8 @@ MonoBehaviour:
   sound: 
   gasoline: 33.9
   initialPos: {x: 1, y: 1, z: 1}
+  canGetBigger: 0
+  escalar: {x: 1, y: 1, z: 1}
 --- !u!1 &259099728
 GameObject:
   m_ObjectHideFlags: 0
@@ -2229,6 +2231,8 @@ MonoBehaviour:
   name2: scalibab
   isRaining: 0
   number: -1
+  num1: 2
+  num2: 3
 --- !u!135 &1414093496
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2816,6 +2820,8 @@ MonoBehaviour:
   sound: brum brum
   gasoline: 8.25
   initialPos: {x: 1, y: 1, z: 1}
+  canGetBigger: 0
+  escalar: {x: 1, y: 1, z: 1}
 --- !u!1 &1749062002
 GameObject:
   m_ObjectHideFlags: 0
@@ -2944,6 +2950,8 @@ MonoBehaviour:
   sound: 
   gasoline: 49.75
   initialPos: {x: 1, y: 1, z: 1}
+  canGetBigger: 1
+  escalar: {x: 1, y: 1, z: 1}
 --- !u!1 &1908075070
 GameObject:
   m_ObjectHideFlags: 0

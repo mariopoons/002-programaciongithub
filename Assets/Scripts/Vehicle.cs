@@ -20,6 +20,10 @@ public class Vehicle : MonoBehaviour
     // for changing the start position of an object
     public Vector3 initialPos = new Vector3(1, 1, 1);
 
+    // this scales the vehicle
+    public bool canGetBigger;
+    public Vector3 escalar = new Vector3(1, 1, 1);
+
     private void Start()
     {   // this tells how many wheels the object has 
         /*Debug.Log($" The {name} has {wheels} wheels."); */
@@ -66,6 +70,15 @@ public class Vehicle : MonoBehaviour
 
         /*transform.position = initialPos;*/
     }
+    private void Update()
+    {
+
+        if (canGetBigger && Input.GetMouseButtonDown(0))
+        {
+            transform.localScale += Vector3.one;
+        }
+
+}
 }
 
 
