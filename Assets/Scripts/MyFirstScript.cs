@@ -15,6 +15,23 @@ public class MyFirstScript : MonoBehaviour
     //this variable saves the player's username //
     private string playerName = "Mario Pons";
     // this variable saves if the game is over //
-    [SerializeField] private bool isGameOver = false; 
+    [SerializeField] private bool isGameOver = false;
+
+    public string message = "¡Hola Mundo!";
+    public int points = 256;
+    private void Start()
+
+    {
+        /*Debug.Log(message);
+        Debug.Log(points);
+        Debug.Log($"Tengo {points} puntos");
+
+        Debug.Log(string.Format("Tengo {0} puntos", points));
+        Debug.Log(string.Format("Hola {0}, tienes {1} puntos", playerName, points));*/
+    }
+
+
+
+
 
 }
